@@ -5,12 +5,14 @@ def count_calls():
 def string_info (string):
     count_calls()
     print((len(string), string.upper(), string.lower()))
+    return
 def is_contains (string, list_to_search):
     count_calls()
     if string.lower() in str(list_to_search).lower():
         print(True)
     else:
         print(False)
+    return
 
 
 string_info('Laevea')
