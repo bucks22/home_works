@@ -8,9 +8,8 @@ class House:
         self.name = name
         self.fn = int(fn)
     def __del__(self):
-        return print(f'{self.name} снесен, но он останется в истории')
-
-
+        print(f'{self.name} снесен, но он останется в истории')
+        return
 
 dom1 = House('Жк1', 12)
 print(House.houses_history)
