@@ -12,7 +12,7 @@ class Product:
 
 class Shop:
     def __init__(self, __file_name):
-        __file_name = 'products.txt'
+        self.__file_name = 'products.txt'
 
     def get_products(self):
         self.file = open(self.__file_name, 'r')
