@@ -1,16 +1,13 @@
-
 def custom_write(file_name, strings):
-    file = open(file_name, 'w', encoding='utf-8')
+    file = open(file_name, 'a', encoding='utf-8')
     strings_positions = {}
-    # start_position = 0
+    start_position = 0
 
     for line_number, string in enumerate(strings, 1):
-        # byte_position = start_position
-        position = file.tell()
+        byte_position = start_position
         file.write(string + '\n')
-        # start_position += len(string.encode('utf-8')) + 2
-        # strings_positions[(line_number, byte_position)] = string
-        strings_positions[(line_number, position)] = string
+        start_position += len(string.encode('utf-8')) + 2
+        strings_positions[(line_number, byte_position)] = string
     file.close()
     return strings_positions
 
