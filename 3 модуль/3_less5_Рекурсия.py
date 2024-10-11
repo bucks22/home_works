@@ -6,5 +6,5 @@ def get_multiplied_digits(number):
     else:
         return first * get_multiplied_digits(int(str_number[1:]))
 
-print(get_multiplied_digits(7810))
+print(get_multiplied_digits(772))
 
