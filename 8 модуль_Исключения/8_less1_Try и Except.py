@@ -2,7 +2,7 @@ def add_everything_up(a, b):
     if type(a) != bool and isinstance(b, (float, str, int)):
         try:
             c = a + b
-        except TypeError:
+        except TypeError as TE:
             c = str(a) + str(b)
         return c
     else:
