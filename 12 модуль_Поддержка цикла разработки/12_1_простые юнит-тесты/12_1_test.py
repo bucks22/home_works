@@ -18,7 +18,7 @@ class RunnerTest(unittest.TestCase):
     def test_challenge(self):
         rn2 = runner.Runner("random_name2")
         rn3 = runner.Runner("random_name3")
-        for i in range(11):
+        for i in range(10):
             rn2.run()
             rn3.walk()
         self.assertNotEqual(rn2.distance, rn3.distance)
