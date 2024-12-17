@@ -7,6 +7,7 @@ logging.basicConfig(level=logging.INFO, filemode='w', filename='runner_tests.log
 
 
 class RunnerTest(unittest.TestCase):
+
     def test_walk(self):
         try:
             rn = runner.Runner("random_name")
